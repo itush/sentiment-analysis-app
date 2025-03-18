@@ -55,7 +55,17 @@ sentiment-analysis-app/
 1. Create and activate a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
+   # On Windows: venv\Scripts\activate
+
+   # Navigate to backend directory
+   cd backend
+
+   # Install dependencies
+   pip install fastapi uvicorn scikit-learn transformers torch numpy pandas python-dotenv python-multipart
+
+   # Create requirements.txt
+   pip freeze > requirements.txt
    ```
 
 2. Install dependencies:
